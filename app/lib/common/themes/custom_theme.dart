@@ -111,3 +111,59 @@ var darkTextTheme = const TextTheme(
     fontWeight: FontWeight.w700,
   ),
 );
+
+var lightInput = InputDecoration(
+  focusColor: lightColorScheme.secondary,
+  isCollapsed: true,
+  iconColor: lightColorScheme.primary,
+  prefixIconColor: lightColorScheme.primary,
+  suffixIconColor: lightColorScheme.primary,
+  contentPadding: const EdgeInsets.all(16.0),
+  errorMaxLines: 1,
+  hintStyle: TextStyle(
+    color: LIGHT_OUTLINE,
+    fontSize: 13.0,
+  ),
+  errorStyle: TextStyle(
+    color: lightColorScheme.error,
+    fontSize: 12.0,
+  ),
+  fillColor: DARK_TEXT,
+  border: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: lightColorScheme.primary,
+      width: 1.0,
+    ),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: lightColorScheme.primaryContainer,
+      width: 1.0,
+    ),
+  ),
+);
+var darkInput = lightInput.copyWith(
+  focusColor: darkColorScheme.secondary,
+  iconColor: darkColorScheme.primary,
+  prefixIconColor: darkColorScheme.primary,
+  suffixIconColor: darkColorScheme.primary,
+  fillColor: LIGHT_TEXT,
+  hintStyle: lightInput.hintStyle!.copyWith(
+    color: DARK_OUTLINE,
+  ),
+  errorStyle: lightInput.errorStyle!.copyWith(
+    color: darkColorScheme.primary,
+  ),
+  border: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: darkColorScheme.primary,
+      width: 1.0,
+    ),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: darkColorScheme.primaryContainer,
+      width: 1.0,
+    ),
+  ),
+);

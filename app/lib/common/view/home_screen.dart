@@ -1,5 +1,6 @@
 import 'package:app/common/layout/main_layout.dart';
 import 'package:app/common/themes/custom_theme.dart';
+import 'package:app/user/view/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -43,14 +44,15 @@ class _HomeScreenState extends State<HomeScreen>
       body: TabBarView(
         controller: _controller,
         children: [
-          Container(
-            child: Center(
-              child: Text(
-                '홈',
-                style: lightTextStyle,
-              ),
-            ),
-          ),
+          // Container(
+          //   child: Center(
+          //     child: Text(
+          //       '홈',
+          //       style: lightTextStyle,
+          //     ),
+          //   ),
+          // ),
+          LoginScreen(),
           Container(
             child: Center(
               child: Text(
