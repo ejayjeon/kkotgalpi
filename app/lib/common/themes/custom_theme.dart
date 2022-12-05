@@ -141,6 +141,12 @@ var lightInput = InputDecoration(
       width: 1.0,
     ),
   ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: lightColorScheme.primary,
+      width: 1.0,
+    ),
+  ),
 );
 var darkInput = lightInput.copyWith(
   focusColor: darkColorScheme.secondary,
@@ -163,6 +169,12 @@ var darkInput = lightInput.copyWith(
   focusedBorder: OutlineInputBorder(
     borderSide: BorderSide(
       color: darkColorScheme.primaryContainer,
+      width: 1.0,
+    ),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: darkColorScheme.primary,
       width: 1.0,
     ),
   ),
